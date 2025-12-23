@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize page functionality
     console.log('Organiya website loaded');
     
-    // Note: Google Forms iframe font loading errors are expected when viewing locally via file:// protocol
-    // These errors will NOT occur when hosted on GitHub Pages (https://)
+    // Note: Google Forms iframe may show font loading errors in console
+    // These errors come from inside the Google Forms iframe (third-party code we cannot control)
     // The forms will still function correctly with fallback fonts
+    // If you see "filesystem:https://" errors, it may be due to browser extensions or settings
     
     // Handle missing images
     initImageFallbacks();
