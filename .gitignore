@@ -1,0 +1,28 @@
+# Unused Images Archive (excluded from GitHub)
+Unused_Images/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+*.cache
+
+# Design files (optional - uncomment if you want to exclude)
+# *.fig
+
+# System files
+Thumbs.db
+desktop.ini
+
