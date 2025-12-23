@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize page functionality
     console.log('Organiya website loaded');
     
+    // Note: Google Forms iframe font loading errors are expected when viewing locally via file:// protocol
+    // These errors will NOT occur when hosted on GitHub Pages (https://)
+    // The forms will still function correctly with fallback fonts
+    
     // Handle missing images
     initImageFallbacks();
 
@@ -121,19 +125,27 @@ function initImageFallbacks() {
         });
     });
     
-    // Check if hero background images exist
+    // Check if hero background images exist (only if inline style is present)
+    // Note: Banner images are optional - CSS gradient fallback is used if images don't exist
     document.querySelectorAll('.hero[style*="background-image"]').forEach(hero => {
         const bgImage = hero.style.backgroundImage;
         if (bgImage && bgImage.includes('url(')) {
             const urlMatch = bgImage.match(/url\(['"]?([^'"]+)['"]?\)/);
             if (urlMatch) {
                 const imgUrl = urlMatch[1];
-                const img = new Image();
-                img.onerror = function() {
-                    // Background image failed to load, ensure dark background
-                    hero.style.backgroundImage = 'linear-gradient(135deg, #184A45 0%, #1E854C 100%)';
-                };
-                img.src = imgUrl;
+                // Only validate if it's a relative path (not data URI or external)
+                if (imgUrl && !imgUrl.startsWith('data:') && !imgUrl.startsWith('http')) {
+                    const img = new Image();
+                    img.onerror = function() {
+                        // Background image failed to load, use CSS gradient fallback
+                        hero.style.backgroundImage = 'linear-gradient(135deg, #184A45 0%, #1E854C 100%)';
+                    };
+                    img.onload = function() {
+                        // Image loaded successfully, keep the original background-image
+                    };
+                    // Set src after handlers to avoid race condition
+                    img.src = imgUrl;
+                }
             }
         }
     });
