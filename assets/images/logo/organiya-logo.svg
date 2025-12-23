@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120">
+  <!-- Outer Arc (C shape) -->
+  <path d="M 20 20 Q 20 20 20 60 Q 20 100 100 100 Q 180 100 180 60 Q 180 20 100 20" 
+        fill="none" 
+        stroke="#184A45" 
+        stroke-width="8" 
+        stroke-linecap="round"/>
+  
+  <!-- Plant Stem -->
+  <path d="M 100 85 Q 105 70 100 50" 
+        fill="none" 
+        stroke="#184A45" 
+        stroke-width="6" 
+        stroke-linecap="round"/>
+  
+  <!-- Small Left Leaves -->
+  <path d="M 95 60 Q 75 55 80 70" 
+        fill="#184A45" 
+        stroke="#184A45" 
+        stroke-width="2"/>
+  <path d="M 92 45 Q 70 40 75 55" 
+        fill="#184A45" 
+        stroke="#184A45" 
+        stroke-width="2"/>
+  
+  <!-- Large Right Leaf -->
+  <path d="M 105 55 Q 130 40 145 60 Q 135 75 115 65" 
+        fill="#184A45" 
+        stroke="#184A45" 
+        stroke-width="2"/>
+  <path d="M 125 55 L 125 70" 
+        stroke="#1E854C" 
+        stroke-width="2" 
+        stroke-linecap="round"/>
+  
+  <!-- Orange Dot -->
+  <circle cx="102" cy="45" r="5" fill="#FF6B35"/>
+  
+  <!-- Organiya Text -->
+  <text x="100" y="105" 
+        font-family="Georgia, serif" 
+        font-size="28" 
+        font-weight="normal" 
+        fill="#184A45" 
+        text-anchor="middle">Organiya</text>
+</svg>
