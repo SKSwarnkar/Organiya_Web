@@ -43,6 +43,10 @@ Email delivery remains to the existing verified destination, preserving the know
 
 ## Verification and owner actions
 
+Release evidence: PR #8 (`codex/organiya-enquiry-growth` → `codex/organiya-launch`). Source commit `1ee3962f8bda348381f66b8b7eb81447c75184db` passed 43 backend and 17 browser/dashboard tests, including GitHub CI. Cloudflare preview `dbc13e4c-dd04-42cb-accb-9242f0878f0b` passed an additional deployed mobile, search/context and generic-form smoke check. Website content revision: `7afc021125a2`.
+
+The compatible Worker was deployed first as version `b82c2a27-59f7-477b-b1bd-496e0c20957f`. Deployed binding metadata confirmed the existing encrypted recipient and Turnstile secret, new encrypted abuse key, rate limiter and `InquiryGuard` namespace. Live GET returned 405 with handler version 2; seven invalid POSTs returned validation errors and then 429 with Retry-After 60. These negative checks sent no mail. The short-window binding is approximate, as documented above. A small singular/plural correction to the throttle message follows this first deployment; final version and production merge evidence are retained with the PR and private release evidence.
+
 Automated tests use mocked email/Turnstile and synthetic private-register records. They do not send real mail. Browser checks cover 320/390/768/1440px, galleries, filters, keyboard, no-JS fallback, accessibility, purpose/scope choices, attribution, failed/retried submissions and offline import/export. Backend checks cover legacy compatibility, validation, races, exact windows/caps, duplicate IDs, unknown delivery and storage failure. A deployment dry run validates the Worker bundle and bindings.
 
 Owner verification after release:

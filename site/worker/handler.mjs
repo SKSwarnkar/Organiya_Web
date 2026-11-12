@@ -2,7 +2,7 @@ import {validateInquiry} from './schema.mjs';
 export {validateInquiry};
 const reply=(status,data,headers={})=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','X-Organiya-Form':'2',...headers}});
 const unavailable=()=>reply(503,{error:'We could not confirm that your enquiry was sent. Please keep this page open and try again later.'},{'Retry-After':'60'});
-const limited=seconds=>reply(429,{error:'We are receiving several enquiries. Please try again after '+(seconds>3600?'a few hours':Math.ceil(seconds/60)+' minutes')+'. Your message remains on this page.'},{'Retry-After':String(seconds)});
+const limited=seconds=>reply(429,{error:'We are receiving several enquiries. Please try again after '+(seconds>3600?'a few hours':Math.ceil(seconds/60)+' minute'+(Math.ceil(seconds/60)===1?'':'s'))+'. Your message remains on this page.'},{'Retry-After':String(seconds)});
 async function fingerprints(values,ip,secret){
  const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign']);
  const digest=async(label,value)=>Array.from(new Uint8Array(await crypto.subtle.sign('HMAC',key,new TextEncoder().encode('organiya-v2:'+label+':'+value)))).map(b=>b.toString(16).padStart(2,'0')).join('');
