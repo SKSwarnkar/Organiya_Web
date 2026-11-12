@@ -25,7 +25,7 @@ The public Turnstile key is in content/site.json. The widget is Managed and rest
 
 ## Rollback
 
-Restore the previous static Pages deployment to return to email-app inquiries. Preserve the Worker source and deployment; disable its dedicated route if needed. Do not change DNS or email forwarding as a rollback step.
+Restore a known working static Pages deployment and, if necessary, its compatible Worker version. Preserve the Worker source and deployment; disable its dedicated route if needed. Do not change DNS or email forwarding as a rollback step.
 
 
 ## Deployment record — 2026-11-12
@@ -35,3 +35,7 @@ Worker `organiya-inquiries` was deployed through the Cloudflare editor from the 
 For subsequent code changes, deploy `worker/index.mjs` with Wrangler or bundle the handler and product map for the dashboard editor; preserve the existing bindings and secrets. The Pages Git integration deploys the static website only, not this separate Worker.
 
 The owner-approved live inquiry was accepted on 2026-11-12. Inbox receipt remains unconfirmed: the owner will check later. No additional test emails were sent. The real widget revealed a 320px overflow that the original empty mock missed; use the documented compact widget size and model its physical dimensions in responsive tests.
+
+## Next development tranche
+
+Use [GROWTH-AND-CONTENT-PLAN.md](GROWTH-AND-CONTENT-PLAN.md) for the proposed generic enquiry form, declared product scope, business follow-up, metadata/privacy choices, exact abuse thresholds and India-focused copy. These proposals are not deployed controls. The immediate public-email cleanup removes mailto links, rendered addresses and the address in browser content; email routing and Worker delivery are unchanged. JavaScript is required for submissions, with an explicit no-JavaScript instruction. Existing public repository history and delivery-error fallback are not erased.

@@ -24,7 +24,7 @@ Cloudflare Pages build settings: no framework, root directory `site`, command `n
 
 | Change | Edit |
 | --- | --- |
-| Identity, email, navigation and phase notices | `content/site.json` |
+| Identity, navigation and phase notices | `content/site.json` |
 | Home, Story, contact introductions and family occasions | `content/pages.json` |
 | Product copy, card images, galleries and future SKU fields | `content/products.json` |
 | Original approved illustrations / logos | `assets/` |
@@ -33,7 +33,7 @@ Cloudflare Pages build settings: no framework, root directory `site`, command `n
 
 The build generates image dimensions and responsive widths from actual assets. It produces hashed image filenames, static HTML, metadata, sitemap, robots, security headers and redirects. Keep card images 4:5; galleries follow actual image proportions and do not letterbox.
 
-Inquiries use a visitor form, with direct email as a fallback. The form preserves selected-product context and sends JSON to `/api/inquiry`. A separate Cloudflare Worker validates fields, origin and a single-use Turnstile token before sending to the configured, verified Organiya inbox; the visitor address is Reply-To. The website stores no inquiry database or browser drafts. Success is shown only after the email service accepts the message; final inbox delivery still needs a live receipt check.
+Inquiries use a visitor form. Public email links, displayed addresses and the address in browser content were removed to reduce harvesting. JavaScript is required to submit; no-JavaScript visitors receive an explicit instruction to enable it or try another browser. Existing email forwarding still works. The form preserves selected-product context and sends JSON to `/api/inquiry`. A separate Cloudflare Worker validates fields, origin and a single-use Turnstile token before sending to the configured, verified Organiya inbox; the visitor address is Reply-To. The website stores no inquiry database or browser drafts. Success is shown only after the email service accepts the message; final inbox delivery still needs a live receipt check.
 
 See `docs/INQUIRY-FORM.md` for deployment, bindings, privacy and rollback. `npm run test:inquiry` exercises the handler without sending email. Browser tests mock both Turnstile and mail submission; do not mistake those for a real delivery test.
 
@@ -42,3 +42,5 @@ Current launch is **upcoming**: no SKU, price, availability, label data, licence
 A future Decap UI can map these JSON files; it needs authentication and an editorial release workflow. Astro could replace the small build layer if useful. Neither is needed to keep this site online.
 
 Before any release: validate → build → test → pull request to `codex/organiya-launch` → GitHub checks → Cloudflare preview → merge and deploy → smoke. The launch branch deploys automatically; keep edits on a separate branch until checked. Preserve rollback and email/DNS records. Never publish credentials, private formulation/lab evidence, inquiry records or internal diagnostics.
+
+The next enquiry/business-content tranche is specified in `docs/GROWTH-AND-CONTENT-PLAN.md`, including proposed spam limits and privacy-aware attribution. That plan distinguishes current behaviour from features not yet implemented.
