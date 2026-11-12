@@ -39,4 +39,4 @@ Current launch is **upcoming**: no SKU, price, availability, label data, licence
 
 A future Decap UI can map these JSON files; it needs authentication and an editorial release workflow. Astro could replace the small build layer if useful. Neither is needed to keep this site online.
 
-Before any release: validate → build → test → GitHub checks → preview → deploy → smoke. Preserve rollback and email/DNS records. Never publish credentials, private formulation/lab evidence, inquiry records or internal diagnostics.
+Before any release: validate → build → test → pull request to `codex/organiya-launch` → GitHub checks → Cloudflare preview → merge and deploy → smoke. The launch branch deploys automatically; keep edits on a separate branch until checked. Preserve rollback and email/DNS records. Never publish credentials, private formulation/lab evidence, inquiry records or internal diagnostics.
