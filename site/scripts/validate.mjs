@@ -1,6 +1,6 @@
 import fs from 'node:fs';import path from 'node:path';import sharp from 'sharp';
 export async function validate(){
- const data=Object.fromEntries(['site','products','pages','media'].map(k=>[k,JSON.parse(fs.readFileSync('content/'+k+'.json','utf8'))]));const {site,products,pages}=data;
+ const data=Object.fromEntries(['site','products','pages','media','inquiries'].map(k=>[k,JSON.parse(fs.readFileSync('content/'+k+'.json','utf8'))]));const {site,products,pages}=data;
  if(site.launchPhase!=='upcoming'||site.commerceEnabled!==false)throw Error('This release supports upcoming catalog only; commerce requires a separate implementation.');
  if(site.mode!=='production'||site.contactMode!=='form'||!/^https:\/\//.test(site.canonicalOrigin)||Object.hasOwn(site,'email'))throw Error('Invalid production site settings');
  if(site.inquiry?.endpoint!=='/api/inquiry'||!/^0x[\w-]+$/.test(site.inquiry?.siteKey||''))throw Error('Missing production inquiry configuration');

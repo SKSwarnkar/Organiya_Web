@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4.160.1/config-schema.json",
+  "name": "organiya-inquiries",
+  "account_id": "bbe053a23bc0710c097456ca29cb9eff",
+  "main": "index.mjs",
+  "compatibility_date": "2026-11-12",
+  "workers_dev": false,
+  "preview_urls": false,
+  "keep_vars": true,
+  "routes": [{"pattern": "organiyaglobal.com/api/inquiry", "zone_name": "organiyaglobal.com"}],
+  "vars": {"SITE_ORIGIN": "https://organiyaglobal.com", "DISABLE_SEND": "false"},
+  "send_email": [{"name": "EMAIL"}],
+  "ratelimits": [{"name": "INQUIRY_LIMITER", "namespace_id": "2026111201", "simple": {"limit": 5, "period": 60}}],
+  "durable_objects": {"bindings": [{"name": "INQUIRY_GUARD", "class_name": "InquiryGuard"}]},
+  "migrations": [{"tag": "organiya-enquiry-guard-v1", "new_sqlite_classes": ["InquiryGuard"]}],
+  "observability": {"enabled": true, "head_sampling_rate": 1, "logs": {"enabled": true, "invocation_logs": true}, "traces": {"enabled": false}}
+}

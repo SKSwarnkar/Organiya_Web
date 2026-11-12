@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 2,
+  "noticeVersion": "2026-11-12-v2",
+  "heading": "Send an enquiry",
+  "intro": "Choose a reason for contacting us. You do not need to select a product.",
+  "purposes": [
+    {
+      "id": "retail",
+      "label": "Retail or distribution",
+      "fields": [
+        "organisation",
+        "businessRole",
+        "territory"
+      ]
+    },
+    {
+      "id": "bulk",
+      "label": "Bulk or institutional purchase",
+      "fields": [
+        "organisation",
+        "quantity",
+        "timing"
+      ]
+    },
+    {
+      "id": "product",
+      "label": "Product or buying enquiry",
+      "fields": [
+        "location"
+      ]
+    },
+    {
+      "id": "partnership",
+      "label": "Partnership or supply proposal",
+      "fields": [
+        "organisation",
+        "proposalType",
+        "businessWebsite"
+      ]
+    },
+    {
+      "id": "regulatory",
+      "label": "Regulatory or company documentation",
+      "fields": [
+        "organisation",
+        "documentRequested",
+        "officialReference"
+      ]
+    },
+    {
+      "id": "support",
+      "label": "Feedback or support",
+      "fields": [
+        "organisation"
+      ]
+    },
+    {
+      "id": "general",
+      "label": "General enquiry / something else",
+      "fields": [
+        "organisation"
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "id": "unsure",
+      "label": "Not sure yet / prefer to discuss"
+    },
+    {
+      "id": "all",
+      "label": "The whole range"
+    },
+    {
+      "id": "specific",
+      "label": "Specific products"
+    },
+    {
+      "id": "unlisted",
+      "label": "A product not shown"
+    },
+    {
+      "id": "none",
+      "label": "Not product-related"
+    }
+  ],
+  "fields": {
+    "organisation": {
+      "label": "Organisation / department",
+      "max": 150
+    },
+    "businessRole": {
+      "label": "Your business",
+      "options": [
+        "Retailer",
+        "Distributor",
+        "Stockist",
+        "Online seller",
+        "Other"
+      ]
+    },
+    "territory": {
+      "label": "City, state or proposed territory",
+      "max": 120
+    },
+    "quantity": {
+      "label": "Approximate quantity and unit",
+      "max": 100,
+      "hint": "For example: 50 packs for a corporate event"
+    },
+    "timing": {
+      "label": "When are you exploring this for?",
+      "options": [
+        "Exploring options",
+        "After the range launches",
+        "Later"
+      ]
+    },
+    "location": {
+      "label": "City and state / country",
+      "max": 120
+    },
+    "proposalType": {
+      "label": "Type of proposal",
+      "options": [
+        "Supplier",
+        "Manufacturing",
+        "Logistics",
+        "Marketing",
+        "Other"
+      ]
+    },
+    "businessWebsite": {
+      "label": "Business website",
+      "max": 200,
+      "type": "url"
+    },
+    "documentRequested": {
+      "label": "Document or information requested",
+      "max": 150
+    },
+    "officialReference": {
+      "label": "Reference number, if applicable",
+      "max": 100
+    }
+  },
+  "ctaIds": [
+    "header-contact",
+    "footer-contact",
+    "product-enquiry",
+    "product-business",
+    "catalog-unlisted",
+    "distributor-form",
+    "contact-form",
+    "partner-contact"
+  ],
+  "campaigns": {
+    "source": [
+      "qr",
+      "exhibition",
+      "partner",
+      "google",
+      "linkedin",
+      "instagram",
+      "whatsapp",
+      "direct"
+    ],
+    "medium": [
+      "qr",
+      "referral",
+      "organic",
+      "social",
+      "email",
+      "print",
+      "event"
+    ],
+    "campaign": [
+      "india-launch",
+      "retailer-introduction",
+      "product-catalogue"
+    ]
+  }
+}

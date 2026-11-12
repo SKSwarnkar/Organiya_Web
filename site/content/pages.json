@@ -1,77 +1,73 @@
 {
   "home": {
-    "eyebrow": "A LITTLE DISCOVERY, BY ORGANIYA",
+    "eyebrow": "ORGANIYA GLOBAL LLP / INDIA",
     "heading": [
       {
-        "text": "Life happens."
+        "text": "Introducing"
       },
       {
-        "text": "Snack breaks",
+        "text": "Spicenza snacks",
         "emphasis": true
       },
       {
-        "text": "should too."
+        "text": "in India."
       }
     ],
     "intro": [
-      "For the chai catch-up. The desk-side pause.",
-      "The little moments that make up your day.",
-      "Something crunchy is in the making. Meet the upcoming Spicenza range, with Organiya in India."
+      "Organiya Global LLP is preparing to introduce the Spicenza snack range in India.",
+      "Explore the upcoming products or contact us about retail, distribution and other business opportunities."
     ],
-    "cta": "Explore what’s coming",
+    "cta": "View upcoming snacks",
     "image": "chai-sharing-v2",
     "imageAlt": "AI-generated serving scene inspired by reference snacks: ridged sticks and crisps with chai",
     "note": [
-      "Take a break.",
-      "Make it yours."
+      "Chai time.",
+      "Time to share."
     ],
     "finderHeading": [
       {
-        "text": "What’s your"
+        "text": "Snacks for chai time,"
       },
       {
-        "text": "snack moment?",
+        "text": "work and travel.",
         "emphasis": true
       }
     ],
-    "shelfTitle": "Hello, snack shelf.",
-    "shelfIntro": "Six snack ideas in the making. Discover the range we’re preparing for India.",
+    "shelfTitle": "The upcoming Spicenza range.",
+    "shelfIntro": "Explore six snack concepts. Final product and pack details will be shared at launch.",
     "aboutTitle": [
-      "A familiar moment.",
-      "A new introduction."
+      "About Organiya."
     ],
-    "aboutIntro": "Spicenza is the product brand. Organiya is preparing its introduction in India. For now, explore what’s in development, find serving inspiration and start a conversation."
+    "aboutIntro": "Organiya Global LLP is preparing to introduce Spicenza snacks in India. We are the local point of contact for product enquiries, retail, distribution and other business conversations."
   },
   "catalog": {
-    "heading": "Find your everyday favourite.",
+    "heading": "Upcoming Spicenza snacks.",
     "intro": [
-      "A first look at our upcoming Spicenza snacks.",
-      "Working product names and illustrative images introduce the range. Final details will follow at launch."
+      "Explore the range we are preparing for India.",
+      "Product names and images introduce concepts in development. Final details and availability will follow at launch."
     ]
   },
   "story": {
-    "eyebrow": "THE ORGANIYA STORY",
+    "eyebrow": "ABOUT ORGANIYA",
     "heading": [
       {
-        "text": "Good food."
+        "text": "Spicenza snacks."
       },
       {
-        "text": "Little everyday moments.",
+        "text": "An India introduction.",
         "emphasis": true
       }
     ],
     "intro": [
-      "Preparing to introduce Spicenza snacks in India.",
-      "Good food, familiar moments and a little anticipation."
+      "Organiya Global LLP is preparing to introduce the Spicenza snack range in India."
     ],
     "leadTitle": [
-      "Small breaks.",
-      "A little discovery."
+      "Our focus is snacks."
     ],
     "paragraphs": [
-      "A cup of chai. A pause at your desk. A snack plate to share. We’re building our first collection around the little moments that bring people together.",
-      "Organiya Global LLP is preparing Spicenza’s introduction in India. Spicenza is the product brand; Organiya is your local point of contact for the upcoming range.",
-      "Our focus today is snacks. This is an early look at what’s in development, with illustrative serving ideas. We’ll share final product details and availability when the range is ready."
+      "Spicenza is the product brand. Organiya Global LLP is preparing its introduction in India and is the local point of contact for customers and business partners.",
+      "Our first range focuses on snack concepts, including sticks, crisps, a crunchy mix and a variety assortment. The products shown are upcoming and are not available to order yet.",
+      "We welcome enquiries from retailers, distributors, bulk buyers and other prospective partners. Final ingredients, pack sizes, pricing and availability will be shared when the range is ready."
     ],
     "image": "chai-sharing-v2",
     "imageAlt": "AI-generated serving scene inspired by reference snacks: ridged sticks and crisps with chai",
@@ -84,7 +80,7 @@
       {
         "label": "02 / KNOW THE CONNECTION",
         "title": "Spicenza × Organiya.",
-        "copy": "Spicenza is the product brand. Organiya handles the India catalog and inquiries."
+        "copy": "Spicenza is the product brand. Organiya handles the India catalogue and enquiries."
       },
       {
         "label": "03 / ASK BEFORE YOU CHOOSE",
@@ -110,69 +106,67 @@
     "occasionsNote": "AI-generated lifestyle illustrations, inspired by product references. These scenes are serving ideas; Organiya’s planned launch market remains India."
   },
   "contact": {
-    "heading": "Hello, snack person.",
+    "heading": "Contact Organiya.",
     "intro": [
-      "Product curiosity or a potential partnership.",
-      "Tell us what you have in mind."
+      "Contact us about products, buying enquiries, retail and distribution, partnerships or company documentation.",
+      "Our snack range is upcoming. We welcome general enquiries too."
     ]
   },
   "distributors": {
     "heading": [
-      "A little space",
-      "on your shelf?"
+      "Retail and",
+      "distribution enquiries."
     ],
     "intro": [
       "Interested in introducing Spicenza to your customers?",
-      "Explore our upcoming India range and discuss a future partnership."
+      "Explore the upcoming India range and tell us about your business or proposed territory."
     ]
   },
   "moments": [
     {
       "key": "chai",
       "label": "Chai time",
-      "time": "A little afternoon ritual",
-      "title": "Your cup’s new company.",
-      "copy": "Imagine the pause: a warm cup of chai, a little chutney and a bowl of chia sticks. A serving idea for our upcoming range.",
+      "time": "CHAI TIME",
+      "title": "A crunchy pairing for chai.",
+      "copy": "Serving idea: chia sticks with chai and chutney. Final product details will follow at launch.",
       "slug": "chia-crunch-sticks",
       "color": "#f7d6bc"
     },
     {
       "key": "desk",
       "label": "Desk break",
-      "time": "Between one thing and the next",
-      "title": "Make a little space.",
-      "copy": "Pause the to-do list. Explore the roasted pulse mix as a desk-side snack concept.",
+      "time": "AT WORK",
+      "title": "A snack for your work break.",
+      "copy": "Explore the Crunch Mix concept as a serving idea for a break at work.",
       "slug": "protein-crunch-mix",
       "color": "#dce4f5"
     },
     {
       "key": "out",
       "label": "On the go",
-      "time": "A small pause in a busy day",
-      "title": "A different kind of crunch.",
-      "copy": "Explore flax sticks for your snack-break ideas. Final pack formats and availability will be confirmed.",
+      "time": "TRAVEL & OUTINGS",
+      "title": "Snack ideas for a day out.",
+      "copy": "Explore the flax sticks concept. Final pack sizes and availability will be confirmed at launch.",
       "slug": "flax-crunch-sticks",
       "color": "#e5dfb9"
     },
     {
       "key": "share",
       "label": "To share",
-      "time": "A table with room for more",
-      "title": "A little of everything.",
-      "copy": "Bring your curiosity and discover the assortment together. Final pack contents are to be confirmed.",
+      "time": "FAMILY & FRIENDS",
+      "title": "An assortment to share.",
+      "copy": "Explore a selection of snack concepts together. Final variety-pack contents are still to be confirmed.",
       "slug": "smart-snacking-variety-pack",
       "color": "#ead3e6"
     }
   ],
   "partner": {
     "heading": [
-      "Good things are",
-      "better shared."
+      "Work with Organiya."
     ],
     "intro": [
-      "Interested in our upcoming Spicenza snack range?",
-      "Let’s explore a future India retail or distribution partnership."
+      "Explore retail, distribution and other business opportunities for our upcoming Spicenza range in India."
     ],
-    "cta": "Partner with Organiya"
+    "cta": "Retail & distribution enquiries"
   }
 }

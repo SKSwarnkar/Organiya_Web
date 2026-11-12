@@ -1,6 +1,10 @@
 # Organiya inquiry form
 
-The visitor form replaces the email-app CTA on Contact and Distributors. The existing Option O design and selected-product context are retained. Name, email and a message are required; company and phone are optional business fields. No file uploads, automatic replies, marketing enrollment or inquiry database.
+The current form is shared across Contact and Distributors. It accepts seven enquiry purposes with optional whole-range, multi-product, unlisted-product or no-product interests. Relevant optional business fields appear progressively. See [ENQUIRY-GROWTH-RELEASE.md](ENQUIRY-GROWTH-RELEASE.md) for the current implementation, free-plan limits, private register and release evidence.
+
+The Worker requires INQUIRY_LIMITER (5/60s), INQUIRY_GUARD (SQLite), and encrypted ABUSE_KEY in addition to the original mail/Turnstile settings. worker/wrangler.jsonc is the deployment configuration. Existing INQUIRY_TO and TURNSTILE_SECRET must be preserved. The application stores only keyed abuse/deduplication counters, not an enquiry-content database. Notification records can be imported into the private offline register; no automatic CRM connection or separate event analytics is enabled.
+
+The record below describes the initial deployment and remains historical evidence. The v2 Worker accepts its old payload during static-site rollback.
 
 ## Runtime
 
@@ -38,4 +42,4 @@ The owner-approved live inquiry was accepted on 2026-11-12. Inbox receipt remain
 
 ## Next development tranche
 
-Use [GROWTH-AND-CONTENT-PLAN.md](GROWTH-AND-CONTENT-PLAN.md) for the proposed generic enquiry form, declared product scope, business follow-up, metadata/privacy choices, exact abuse thresholds and India-focused copy. These proposals are not deployed controls. The immediate public-email cleanup removes mailto links, rendered addresses and the address in browser content; email routing and Worker delivery are unchanged. JavaScript is required for submissions, with an explicit no-JavaScript instruction. Existing public repository history and delivery-error fallback are not erased.
+Use [GROWTH-AND-CONTENT-PLAN.md](GROWTH-AND-CONTENT-PLAN.md) for the proposed generic enquiry form, declared product scope, business follow-up, metadata/privacy choices, exact abuse thresholds and India-focused copy. The release status at the top of that plan identifies the implemented controls and optional items still disabled. The immediate public-email cleanup removes mailto links, rendered addresses and the address in browser content; email routing and Worker delivery are unchanged. JavaScript is required for submissions, with an explicit no-JavaScript instruction. Existing public repository history and delivery-error fallback are not erased.
