@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests',timeout:60000,workers:2,use:{baseURL:process.env.SITE_URL||'http://127.0.0.1:4176',browserName:'chromium',headless:true},webServer:process.env.SITE_URL?undefined:{command:'npm run preview',url:'http://127.0.0.1:4176',reuseExistingServer:!process.env.CI},reporter:[['list'],['json',{outputFile:'test-results/results.json'}]]});

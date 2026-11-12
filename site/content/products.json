@@ -1,0 +1,521 @@
+[
+  {
+    "slug": "chia-crunch-sticks",
+    "name": "Chia Crunch Sticks",
+    "short": "Chia sticks",
+    "category": "Sticks",
+    "ingredient": "Chia",
+    "note": "Seed-forward. Worth a pause.",
+    "description": "A chia-led stick snack in development, imagined for chai breaks and little sharing plates.",
+    "occasion": "An afternoon pause",
+    "serving": "Pair with a cup of tea, your favourite chutney, or a simple dip.",
+    "detail": "Part of our upcoming Spicenza range. A seed-led addition to your everyday snack table. Explore the crunch on its own, or make it part of a small sharing plate.",
+    "image": "chia-bowl-v2.webp",
+    "color": "#e7e9d4",
+    "brand": "Spicenza",
+    "foodFamily": "snacks",
+    "status": "upcoming",
+    "claims": [],
+    "gallery": [
+      {
+        "id": "chia-crunch-sticks-gallery-1",
+        "kind": "styled",
+        "label": "The snack",
+        "src": "chia-bowl-v2.webp",
+        "alt": "Illustrative Chia Crunch Sticks serving, inspired by product references",
+        "caption": "AI-generated serving illustration · Product in development",
+        "status": "illustrative"
+      },
+      {
+        "id": "chia-crunch-sticks-gallery-2",
+        "kind": "pairing",
+        "label": "Chai time",
+        "src": "chai-sharing-v2.webp",
+        "alt": "Illustrative sharing table with ridged sticks, crisps, chai and chutney",
+        "caption": "AI-generated range pairing · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "chia-crunch-sticks-gallery-3",
+        "kind": "lifestyle",
+        "label": "Festive togetherness",
+        "src": "india-family-v2.webp",
+        "alt": "AI-generated Indian family gathering with chai and bowls of ridged snacks during the festive season.",
+        "caption": "AI-generated Indian festive occasion · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "chia-crunch-sticks-gallery-4",
+        "kind": "lifestyle",
+        "label": "Weekend gathering",
+        "src": "usa-family-v2.webp",
+        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
+        "caption": "AI-generated American family occasion · Serving inspiration",
+        "status": "illustrative"
+      }
+    ],
+    "pendingMedia": [
+      {
+        "kind": "front",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "back",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "nutrition",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "ingredients",
+        "status": "awaiting_approved_asset",
+        "src": null
+      }
+    ],
+    "nutrition": null,
+    "ingredients": null,
+    "allergens": null,
+    "sku": null,
+    "price": null,
+    "currency": "INR",
+    "packSizes": [],
+    "availability": null,
+    "labelVersion": null,
+    "detailsApproved": false
+  },
+  {
+    "slug": "flax-crunch-sticks",
+    "name": "Flax Crunch Sticks",
+    "short": "Flax sticks",
+    "category": "Sticks",
+    "ingredient": "Flax",
+    "note": "A little texture. A lot of crunch.",
+    "description": "A flax-led stick snack in development, imagined for everyday pauses and easy sharing.",
+    "occasion": "A little break",
+    "serving": "Serve in a small bowl alongside tea, or add a dip for a relaxed sharing moment.",
+    "detail": "Part of our upcoming Spicenza range. A second take on the seed-stick format, built around flax. A simple way to bring a different texture to your snack selection.",
+    "image": "flax-bowl-v2.webp",
+    "color": "#eee0c9",
+    "brand": "Spicenza",
+    "foodFamily": "snacks",
+    "status": "upcoming",
+    "claims": [],
+    "gallery": [
+      {
+        "id": "flax-crunch-sticks-gallery-1",
+        "kind": "styled",
+        "label": "The snack",
+        "src": "flax-bowl-v2.webp",
+        "alt": "Illustrative Flax Crunch Sticks serving, inspired by product references",
+        "caption": "AI-generated serving illustration · Product in development",
+        "status": "illustrative"
+      },
+      {
+        "id": "flax-crunch-sticks-gallery-2",
+        "kind": "pairing",
+        "label": "Chai time",
+        "src": "chai-sharing-v2.webp",
+        "alt": "Illustrative sharing table with ridged sticks, crisps, chai and chutney",
+        "caption": "AI-generated range pairing · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "flax-crunch-sticks-gallery-3",
+        "kind": "lifestyle",
+        "label": "Festive togetherness",
+        "src": "india-family-v2.webp",
+        "alt": "AI-generated Indian family gathering with chai and bowls of ridged snacks during the festive season.",
+        "caption": "AI-generated Indian festive occasion · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "flax-crunch-sticks-gallery-4",
+        "kind": "lifestyle",
+        "label": "Weekend gathering",
+        "src": "usa-family-v2.webp",
+        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
+        "caption": "AI-generated American family occasion · Serving inspiration",
+        "status": "illustrative"
+      }
+    ],
+    "pendingMedia": [
+      {
+        "kind": "front",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "back",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "nutrition",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "ingredients",
+        "status": "awaiting_approved_asset",
+        "src": null
+      }
+    ],
+    "nutrition": null,
+    "ingredients": null,
+    "allergens": null,
+    "sku": null,
+    "price": null,
+    "currency": "INR",
+    "packSizes": [],
+    "availability": null,
+    "labelVersion": null,
+    "detailsApproved": false
+  },
+  {
+    "slug": "millet-crunch-crisps",
+    "name": "Millet Crunch Crisps",
+    "short": "Millet crisps",
+    "category": "Crisps",
+    "ingredient": "Millets",
+    "note": "Your dip has met its match.",
+    "description": "A millet-led crisp snack in development, with a ridged format to explore at your snack table.",
+    "occasion": "A table to share",
+    "serving": "Set out with chutney, avocado-lime dip, or your favourite savoury spread.",
+    "detail": "Part of our upcoming Spicenza range. Millet-led crisps for the snack plate, the desk-side pause, or an easy gathering. Keep things simple, or bring your favourite dip.",
+    "image": "millet-bowl-v2.webp",
+    "color": "#eee4c9",
+    "brand": "Spicenza",
+    "foodFamily": "snacks",
+    "status": "upcoming",
+    "claims": [],
+    "gallery": [
+      {
+        "id": "millet-crunch-crisps-gallery-1",
+        "kind": "styled",
+        "label": "The snack",
+        "src": "millet-bowl-v2.webp",
+        "alt": "Illustrative Millet Crunch Crisps serving, inspired by product references",
+        "caption": "AI-generated serving illustration · Product in development",
+        "status": "illustrative"
+      },
+      {
+        "id": "millet-crunch-crisps-gallery-2",
+        "kind": "pairing",
+        "label": "Chai time",
+        "src": "chai-sharing-v2.webp",
+        "alt": "Illustrative sharing table with ridged sticks, crisps, chai and chutney",
+        "caption": "AI-generated range pairing · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "millet-crunch-crisps-gallery-3",
+        "kind": "lifestyle",
+        "label": "Festive togetherness",
+        "src": "india-family-v2.webp",
+        "alt": "AI-generated Indian family gathering with chai and bowls of ridged snacks during the festive season.",
+        "caption": "AI-generated Indian festive occasion · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "millet-crunch-crisps-gallery-4",
+        "kind": "lifestyle",
+        "label": "Weekend gathering",
+        "src": "usa-family-v2.webp",
+        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
+        "caption": "AI-generated American family occasion · Serving inspiration",
+        "status": "illustrative"
+      }
+    ],
+    "pendingMedia": [
+      {
+        "kind": "front",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "back",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "nutrition",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "ingredients",
+        "status": "awaiting_approved_asset",
+        "src": null
+      }
+    ],
+    "nutrition": null,
+    "ingredients": null,
+    "allergens": null,
+    "sku": null,
+    "price": null,
+    "currency": "INR",
+    "packSizes": [],
+    "availability": null,
+    "labelVersion": null,
+    "detailsApproved": false
+  },
+  {
+    "slug": "veggie-crisps",
+    "name": "Veggie Crisps",
+    "short": "Veggie crisps",
+    "category": "Crisps",
+    "ingredient": "Vegetables",
+    "note": "Bring a little colour to the bowl.",
+    "description": "A colourful crisp snack in development, inspired by vegetable-led flavours and a little variety.",
+    "occasion": "A colourful snack plate",
+    "serving": "Add to a sharing board or enjoy alongside a dip of your choice.",
+    "detail": "Part of our upcoming Spicenza range. A colourful direction in the Spicenza range. The final vegetable blend and product details will be confirmed before ordering opens.",
+    "image": "veggie-bowl-v2.webp",
+    "color": "#eedbd3",
+    "brand": "Spicenza",
+    "foodFamily": "snacks",
+    "status": "upcoming",
+    "claims": [],
+    "gallery": [
+      {
+        "id": "veggie-crisps-gallery-1",
+        "kind": "styled",
+        "label": "The snack",
+        "src": "veggie-bowl-v2.webp",
+        "alt": "Illustrative Veggie Crisps serving, inspired by product references",
+        "caption": "AI-generated serving illustration · Product in development",
+        "status": "illustrative"
+      },
+      {
+        "id": "veggie-crisps-gallery-2",
+        "kind": "pairing",
+        "label": "Chai time",
+        "src": "chai-sharing-v2.webp",
+        "alt": "Illustrative sharing table with ridged sticks, crisps, chai and chutney",
+        "caption": "AI-generated range pairing · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "veggie-crisps-gallery-3",
+        "kind": "lifestyle",
+        "label": "Festive togetherness",
+        "src": "india-family-v2.webp",
+        "alt": "AI-generated Indian family gathering with chai and bowls of ridged snacks during the festive season.",
+        "caption": "AI-generated Indian festive occasion · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "veggie-crisps-gallery-4",
+        "kind": "lifestyle",
+        "label": "Weekend gathering",
+        "src": "usa-family-v2.webp",
+        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
+        "caption": "AI-generated American family occasion · Serving inspiration",
+        "status": "illustrative"
+      }
+    ],
+    "pendingMedia": [
+      {
+        "kind": "front",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "back",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "nutrition",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "ingredients",
+        "status": "awaiting_approved_asset",
+        "src": null
+      }
+    ],
+    "nutrition": null,
+    "ingredients": null,
+    "allergens": null,
+    "sku": null,
+    "price": null,
+    "currency": "INR",
+    "packSizes": [],
+    "availability": null,
+    "labelVersion": null,
+    "detailsApproved": false
+  },
+  {
+    "slug": "protein-crunch-mix",
+    "name": "Crunch Mix",
+    "short": "Crunch mix",
+    "category": "Mixes",
+    "ingredient": "Roasted pulses",
+    "note": "A little mix. A lot to discover.",
+    "description": "A crunchy snack mix in development, imagined for a small bowl at your desk or a table to share.",
+    "occasion": "A desk-side companion",
+    "serving": "Spoon into a small snack bowl or bring it to the table as part of a larger spread.",
+    "detail": "Part of our upcoming Spicenza range. A pulse-led mix with a different kind of texture. The final formulation, ingredient list and nutrition information will be confirmed before ordering opens.",
+    "image": "crunch-mix-bowl-v2.webp",
+    "color": "#e4ddcb",
+    "brand": "Spicenza",
+    "foodFamily": "snacks",
+    "status": "upcoming",
+    "claims": [],
+    "gallery": [
+      {
+        "id": "protein-crunch-mix-gallery-1",
+        "kind": "styled",
+        "label": "The snack",
+        "src": "crunch-mix-bowl-v2.webp",
+        "alt": "Illustrative Crunch Mix serving, inspired by product references",
+        "caption": "AI-generated serving illustration · Product in development",
+        "status": "illustrative"
+      },
+      {
+        "id": "protein-crunch-mix-gallery-2",
+        "kind": "pairing",
+        "label": "Chai time",
+        "src": "chai-sharing-v2.webp",
+        "alt": "Illustrative sharing table with ridged sticks, crisps, chai and chutney",
+        "caption": "AI-generated range pairing · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "protein-crunch-mix-gallery-3",
+        "kind": "lifestyle",
+        "label": "Festive togetherness",
+        "src": "india-family-v2.webp",
+        "alt": "AI-generated Indian family gathering with chai and bowls of ridged snacks during the festive season.",
+        "caption": "AI-generated Indian festive occasion · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "protein-crunch-mix-gallery-4",
+        "kind": "lifestyle",
+        "label": "Weekend gathering",
+        "src": "usa-family-v2.webp",
+        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
+        "caption": "AI-generated American family occasion · Serving inspiration",
+        "status": "illustrative"
+      }
+    ],
+    "pendingMedia": [
+      {
+        "kind": "front",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "back",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "nutrition",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "ingredients",
+        "status": "awaiting_approved_asset",
+        "src": null
+      }
+    ],
+    "nutrition": null,
+    "ingredients": null,
+    "allergens": null,
+    "sku": null,
+    "price": null,
+    "currency": "INR",
+    "packSizes": [],
+    "availability": null,
+    "labelVersion": null,
+    "detailsApproved": false
+  },
+  {
+    "slug": "smart-snacking-variety-pack",
+    "name": "Smart Snacking Variety Pack",
+    "short": "The variety pack",
+    "category": "Assortments",
+    "ingredient": "The launch assortment",
+    "note": "A little of every kind of crunch.",
+    "description": "An assortment concept bringing the upcoming range together. Final combinations and pack contents will be confirmed.",
+    "occasion": "Discover your favourites",
+    "serving": "Set out a tasting spread and explore the different snack styles together.",
+    "detail": "Part of our upcoming Spicenza range. A discovery assortment for anyone who wants to explore the range. Pack contents, sizes and availability are still to be confirmed.",
+    "image": "chai-sharing-v2.webp",
+    "color": "#dde2ce",
+    "brand": "Spicenza",
+    "foodFamily": "snacks",
+    "status": "upcoming",
+    "claims": [],
+    "gallery": [
+      {
+        "id": "smart-snacking-variety-pack-gallery-1",
+        "kind": "styled",
+        "label": "The snack",
+        "src": "chai-sharing-v2.webp",
+        "alt": "Illustrative Smart Snacking Variety Pack serving, inspired by product references",
+        "caption": "AI-generated serving illustration · Product in development",
+        "status": "illustrative"
+      },
+      {
+        "id": "smart-snacking-variety-pack-gallery-3",
+        "kind": "lifestyle",
+        "label": "Festive togetherness",
+        "src": "india-family-v2.webp",
+        "alt": "AI-generated Indian family gathering with chai and bowls of ridged snacks during the festive season.",
+        "caption": "AI-generated Indian festive occasion · Serving inspiration",
+        "status": "illustrative"
+      },
+      {
+        "id": "smart-snacking-variety-pack-gallery-4",
+        "kind": "lifestyle",
+        "label": "Weekend gathering",
+        "src": "usa-family-v2.webp",
+        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
+        "caption": "AI-generated American family occasion · Serving inspiration",
+        "status": "illustrative"
+      }
+    ],
+    "pendingMedia": [
+      {
+        "kind": "front",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "back",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "nutrition",
+        "status": "awaiting_approved_asset",
+        "src": null
+      },
+      {
+        "kind": "ingredients",
+        "status": "awaiting_approved_asset",
+        "src": null
+      }
+    ],
+    "nutrition": null,
+    "ingredients": null,
+    "allergens": null,
+    "sku": null,
+    "price": null,
+    "currency": "INR",
+    "packSizes": [],
+    "availability": null,
+    "labelVersion": null,
+    "detailsApproved": false
+  }
+]

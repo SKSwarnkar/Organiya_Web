@@ -1,0 +1,53 @@
+{
+  "name": "Organiya",
+  "legalName": "Organiya Global LLP",
+  "productBrand": "Spicenza",
+  "market": "India",
+  "email": "info@organiyaglobal.com",
+  "logo": "organiya-logo.svg",
+  "mark": "organiya-mark.svg",
+  "productLogo": "spicenza-logo.svg",
+  "announcement": "Good food. Everyday possibilities.",
+  "nav": [
+    {
+      "page": "home",
+      "label": "Home"
+    },
+    {
+      "page": "catalog",
+      "label": "Spicenza snacks"
+    },
+    {
+      "page": "about",
+      "label": "Our story"
+    },
+    {
+      "page": "distributors",
+      "label": "For retailers"
+    }
+  ],
+  "footerTagline": [
+    "Thoughtful discoveries.",
+    "Everyday moments."
+  ],
+  "categories": [
+    "All snacks",
+    "Sticks",
+    "Crisps",
+    "Mixes",
+    "Assortments"
+  ],
+  "mode": "production",
+  "launchPhase": "upcoming",
+  "rangeNotice": "A little preview of what’s in the making. Our Spicenza snack range is being prepared for India. Final products, pack details and availability will be shared at launch. Not available to order yet.",
+  "productStatusLabel": "In the making",
+  "productCta": "Ask about this upcoming snack",
+  "sellerNote": "Spicenza is the product brand. Organiya Global LLP is preparing its introduction in India.",
+  "productInformation": "Final ingredients, allergens, nutrition, pack sizes and pricing will be published when the products are ready to launch. The range shown here is in development and is not available to order.",
+  "licenseNumber": null,
+  "commerceEnabled": false,
+  "canonicalOrigin": "https://organiyaglobal.com",
+  "contactMode": "email",
+  "launchDate": "2026-11-11",
+  "publicPhaseLabel": "India · Upcoming snacks"
+}

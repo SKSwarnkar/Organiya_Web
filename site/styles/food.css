@@ -1,0 +1,105 @@
+/* F-derived food-colour palettes. These are visual references, not product flavours. */
+.design-m{--ink:#51351d;--muted:#786044;--paper:#fffbef;--surface:#f8edce;--line:#dcc99b;--green:#785025;--accent:#8a441f;--hero-bg:#f0c446;--nav-band:#e3af33;--hero-text:#51351d;--hero-muted:#664a26;--hero-em:#88411f;--finder-bg:#f3dfa2;--finder-paper:#fffbef;--photo-frame:#b47b24;--postit-bg:#fff4d8;--postit-ink:#624323;--sticker-bg:#704422;--sticker-ink:#fff4d8;--card-one:#f5e8bc;--card-two:#f9eed9;--card-three:#eedcba;--about-bg:#f2dfa7;--about-symbol:#fffbef;--partner-bg:#654324;--footer-bg:#f8f0d9;--moment-bg:#e8cd88;--chip-border:#c8af70;--form-bg:#f7ecd0;--form-input:#fffdf6;--brand-accent:#b06427;--on-primary:#fffbef}
+.design-n{--ink:#642842;--muted:#7d5d68;--paper:#fff8f0;--surface:#f5e3e6;--line:#e4c5ce;--green:#7c2e4a;--accent:#973b50;--hero-bg:#642842;--nav-band:#f0c5cb;--hero-text:#fff8ed;--hero-muted:#f1d4da;--hero-em:#f5b5c2;--finder-bg:#efd4dc;--finder-paper:#fff8f0;--photo-frame:#c57990;--postit-bg:#f6c8c2;--postit-ink:#642842;--sticker-bg:#efb544;--sticker-ink:#4d1f32;--card-one:#f6e2df;--card-two:#f7ebd7;--card-three:#ecd6df;--about-bg:#edd7dd;--about-symbol:#fff8f0;--partner-bg:#642842;--footer-bg:#f7ece9;--moment-bg:#e7bdcb;--chip-border:#c69aaa;--form-bg:#f5e5e7;--form-input:#fffbf5;--brand-accent:#efb544;--on-primary:#fff8ed}
+.design-o{--ink:#34532b;--muted:#596641;--paper:#fffbed;--surface:#edf0d6;--line:#cdd2a6;--green:#3f622d;--accent:#8b4c20;--hero-bg:#ffd18a;--nav-band:#d4df9c;--hero-text:#34532b;--hero-muted:#596039;--hero-em:#8b4c20;--finder-bg:#e3e9bd;--finder-paper:#fffbed;--photo-frame:#83a34e;--postit-bg:#d4df9c;--postit-ink:#314c28;--sticker-bg:#406334;--sticker-ink:#fff5d8;--card-one:#f5e6bd;--card-two:#e4ebcd;--card-three:#f5edcf;--about-bg:#e5e9c1;--about-symbol:#fffbed;--partner-bg:#36582d;--footer-bg:#f3f1db;--moment-bg:#d6dfac;--chip-border:#adbc83;--form-bg:#eef0d6;--form-input:#fffef5;--brand-accent:#cd731b;--on-primary:#fffbed}
+.design-f .announcement{background:var(--nav-band);color:var(--ink)}
+.design-f .site-header{background:var(--hero-bg)}
+.design-f .header-inner{background:var(--paper);border-color:var(--line)}
+.design-f .site-header .brand-link{background:transparent}
+.design-f .nav-contact{background:var(--green);color:var(--on-primary)}
+.design-f em{color:var(--accent)}
+.design-f main:has(.daily-hero){background:linear-gradient(var(--hero-bg) 0 730px,var(--paper) 730px)}
+.daily-hero-copy{color:var(--hero-text)}
+.daily-hero-copy h1 em{color:var(--hero-em)}
+.daily-hero-copy>.eyebrow{color:var(--hero-muted)}
+.daily-hero-copy>p:not(.eyebrow){color:var(--hero-muted)}
+.daily-hero-copy>.button{background:var(--green);color:var(--on-primary);border-color:var(--green)}
+.daily-hero-copy>.button:hover{background:var(--ink)}
+.daily-small-note>span:last-child{color:var(--hero-muted);font-size:9px;letter-spacing:.075em}
+.daily-small-note .spicenza-signature{width:116px;height:auto;max-height:none;flex:0 0 auto;object-fit:contain}
+.daily-hero-art>.lifestyle{box-shadow:9px 13px 0 var(--photo-frame)}
+.daily-postit{background:var(--postit-bg);color:var(--postit-ink)}
+.daily-postit p{color:var(--postit-ink)}
+.daily-orbit{background:var(--sticker-bg);color:var(--sticker-ink);border-color:var(--hero-bg)}
+.daily-finder{background:var(--finder-bg)}
+.moment-tabs button{border-color:var(--chip-border);color:var(--ink)}
+.moment-tabs button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:var(--on-primary)}
+.moment-tabs button:hover{background:var(--paper);color:var(--ink)}
+.moment-tabs button[aria-pressed=true]:hover{background:var(--green);color:var(--on-primary)}
+.moment-preview{background:var(--finder-paper)}
+.moment-preview-image{background:var(--moment-bg)}
+.moment-sticker{background:var(--paper);color:var(--ink)}
+.design-f .button{color:var(--on-primary)}
+.design-f .button-secondary{color:var(--ink)}
+.design-f .product-card{border-color:var(--line);background:var(--paper)}
+.design-f .product-card:nth-child(3n+1){background:var(--card-one)}
+.design-f .product-card:nth-child(3n+2){background:var(--card-two)}
+.design-f .product-card:nth-child(3n+3){background:var(--card-three)}
+.design-f .image-arrow{background:var(--green);color:var(--on-primary)}
+.daily-about{background:var(--about-bg)}
+.daily-about-symbol{background:var(--about-symbol)}
+.design-f .partner-section{background:var(--partner-bg)}
+.design-f .partner-section h2{color:var(--on-primary)}
+.design-f .partner-section .eyebrow,.design-f .partner-section p:not(.eyebrow){color:var(--on-primary)}
+.design-f .partner-section .button{color:var(--on-primary);border-color:var(--on-primary)}
+.design-f .partner-section .button:hover{background:var(--paper);color:var(--green)}
+.design-f .site-footer{background:var(--footer-bg)}
+.design-f .footer-brand .brand-link{background:transparent}
+.design-f .filter{border-color:var(--line)}
+.design-f .filter.selected{background:var(--green);color:var(--on-primary)}
+.design-f .filter.selected>span{color:var(--on-primary)}
+.design-f .detail-media{background:var(--card-one)}
+.design-f .detail-facts{background:var(--surface)}
+.design-f .about-feature-image{background:var(--card-three)}
+.design-f .brand-relationship{background:var(--surface)}
+.design-f .about-principles article{background:var(--card-one)}
+.design-f .about-principles article:nth-child(2){background:var(--card-two)}
+.design-f .about-principles article:nth-child(3){background:var(--card-three)}
+.design-f .distributor-visual{background:var(--surface)}
+.design-f .form-panel{background:var(--form-bg);border-color:var(--line)}
+.design-f input,.design-f select,.design-f textarea{background:var(--form-input);border-color:var(--chip-border);color:var(--ink)}
+.design-f input::placeholder,.design-f textarea::placeholder{color:var(--muted)}
+.design-f .audience-tabs button{border-color:var(--line)}
+.design-f .audience-tabs button[aria-pressed=true]{background:var(--green);color:var(--on-primary)}
+.design-f .contact-product{background:var(--card-one)}
+.design-f .tiny-dot{background:var(--brand-accent)}
+.design-f :is(button,a,input,select,textarea,summary):focus-visible{outline-color:#126c36}
+/* M keeps the turmeric canvas vivid, with cream breathing room. */
+.design-m .daily-orbit{border:6px solid var(--hero-bg)}
+.design-m .daily-postit{box-shadow:5px 6px 0 #a5742622}
+.design-m .daily-about-symbol{border:1px solid #dbc68f}
+/* N uses kokum plum as the dark field; rose and gold lighten the composition. */
+.design-n .daily-hero-copy>.button{background:#f5c578;color:#54253b;border-color:#f5c578}
+.design-n .daily-hero-copy>.button:hover{background:#fff0cf}
+.design-n .daily-small-note .spicenza-signature{background:#fff8f0;padding:9px 12px;border-radius:7px;width:138px}
+.design-n .daily-small-note>span:last-child{font-size:8px;letter-spacing:.055em}
+.design-n .daily-orbit{box-shadow:0 0 0 1px #efb544}
+.design-n .daily-finder{border:1px solid #ddbdc9}
+/* O pairs mango warmth with pistachio greens throughout the browsing experience. */
+.design-o .daily-orbit{border:6px solid var(--hero-bg)}
+.design-o .daily-small-note{border-top:1px solid #c7ab6a;padding-top:22px}
+.design-o .daily-postit{box-shadow:5px 6px 0 #6b823a22}
+.design-o .daily-about-symbol{border:1px solid #c4cf98}
+.design-o .image-arrow{background:#406334;color:#fffbed}
+.design-f :is(button,a,input,select,textarea,summary):focus-visible{outline:3px solid #fffaf1;outline-offset:3px;box-shadow:0 0 0 6px var(--ink)}
+@media(max-width:900px){
+ .design-f .main-nav{background:var(--paper);color:var(--ink)}
+ .daily-small-note .spicenza-signature{width:100px}.daily-small-note>span:last-child{font-size:8px}
+ .design-n .daily-small-note .spicenza-signature{width:118px;padding:8px 10px}
+ .design-n .daily-small-note>span:last-child{font-size:7px}
+}
+@media(max-width:700px){
+ .design-f main:has(.daily-hero){background:linear-gradient(var(--hero-bg) 0 950px,var(--paper) 950px)}
+ .daily-hero-art>.lifestyle{box-shadow:6px 8px 0 var(--photo-frame)}
+ .daily-small-note .spicenza-signature{width:108px}
+ .daily-small-note>span:last-child{font-size:8px;line-height:1.8;letter-spacing:.04em}
+ .design-n .daily-small-note .spicenza-signature{width:120px}
+ .design-n .daily-small-note>span:last-child{font-size:7px}
+ .design-o .daily-small-note{padding-top:18px}
+}
+@media(max-width:360px){
+ .daily-small-note{gap:12px}.daily-small-note .spicenza-signature{width:94px}
+ .daily-small-note>span:last-child{font-size:7px}
+ .design-n .daily-small-note .spicenza-signature{width:104px;padding:7px 9px}
+ .design-n .daily-small-note>span:last-child{font-size:6.5px}
+}

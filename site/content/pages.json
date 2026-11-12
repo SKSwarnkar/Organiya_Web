@@ -1,0 +1,178 @@
+{
+  "home": {
+    "eyebrow": "A LITTLE DISCOVERY, BY ORGANIYA",
+    "heading": [
+      {
+        "text": "Life happens."
+      },
+      {
+        "text": "Snack breaks",
+        "emphasis": true
+      },
+      {
+        "text": "should too."
+      }
+    ],
+    "intro": [
+      "For the chai catch-up. The desk-side pause.",
+      "The little moments that make up your day.",
+      "Something crunchy is in the making. Meet the upcoming Spicenza range, with Organiya in India."
+    ],
+    "cta": "Explore what’s coming",
+    "image": "chai-sharing-v2",
+    "imageAlt": "AI-generated serving scene inspired by reference snacks: ridged sticks and crisps with chai",
+    "note": [
+      "Take a break.",
+      "Make it yours."
+    ],
+    "finderHeading": [
+      {
+        "text": "What’s your"
+      },
+      {
+        "text": "snack moment?",
+        "emphasis": true
+      }
+    ],
+    "shelfTitle": "Hello, snack shelf.",
+    "shelfIntro": "Six snack ideas in the making. Discover the range we’re preparing for India.",
+    "aboutTitle": [
+      "A familiar moment.",
+      "A new introduction."
+    ],
+    "aboutIntro": "Spicenza is the product brand. Organiya is preparing its introduction in India. For now, explore what’s in development, find serving inspiration and start a conversation."
+  },
+  "catalog": {
+    "heading": "Find your everyday favourite.",
+    "intro": [
+      "A first look at our upcoming Spicenza snacks.",
+      "Working product names and illustrative images introduce the range. Final details will follow at launch."
+    ]
+  },
+  "story": {
+    "eyebrow": "THE ORGANIYA STORY",
+    "heading": [
+      {
+        "text": "Good food."
+      },
+      {
+        "text": "Little everyday moments.",
+        "emphasis": true
+      }
+    ],
+    "intro": [
+      "Preparing to introduce Spicenza snacks in India.",
+      "Good food, familiar moments and a little anticipation."
+    ],
+    "leadTitle": [
+      "Small breaks.",
+      "A little discovery."
+    ],
+    "paragraphs": [
+      "A cup of chai. A pause at your desk. A snack plate to share. We’re building our first collection around the little moments that bring people together.",
+      "Organiya Global LLP is preparing Spicenza’s introduction in India. Spicenza is the product brand; Organiya is your local point of contact for the upcoming range.",
+      "Our focus today is snacks. This is an early look at what’s in development, with illustrative serving ideas. We’ll share final product details and availability when the range is ready."
+    ],
+    "image": "chai-sharing-v2",
+    "imageAlt": "AI-generated serving scene inspired by reference snacks: ridged sticks and crisps with chai",
+    "principles": [
+      {
+        "label": "01 / START WITH THE FOOD",
+        "title": "See it. Explore it.",
+        "copy": "Browse the snacks, take a closer look and discover serving ideas."
+      },
+      {
+        "label": "02 / KNOW THE CONNECTION",
+        "title": "Spicenza × Organiya.",
+        "copy": "Spicenza is the product brand. Organiya handles the India catalog and inquiries."
+      },
+      {
+        "label": "03 / ASK BEFORE YOU CHOOSE",
+        "title": "A simple conversation.",
+        "copy": "Ask about the upcoming range or discuss future retail and distribution interest."
+      }
+    ],
+    "occasions": [
+      {
+        "image": "india-family-v2",
+        "title": "A festive evening. A little togetherness.",
+        "copy": "Chai, familiar faces and a table made for sharing. An Indian festive-season serving inspiration.",
+        "alt": "AI-generated Indian family gathering with chai and bowls of ridged snacks during the festive season."
+      },
+      {
+        "image": "usa-family-v2",
+        "title": "A weekend table, with room for more.",
+        "copy": "A relaxed American family lunch, with picnic favourites and a bowl of crunch. Serving inspiration from another table.",
+        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie."
+      }
+    ],
+    "occasionsHeading": "Different tables. The same joy of sharing.",
+    "occasionsNote": "AI-generated lifestyle illustrations, inspired by product references. These scenes are serving ideas; Organiya’s planned launch market remains India."
+  },
+  "contact": {
+    "heading": "Hello, snack person.",
+    "intro": [
+      "Product curiosity or a potential partnership.",
+      "Tell us what you have in mind."
+    ]
+  },
+  "distributors": {
+    "heading": [
+      "A little space",
+      "on your shelf?"
+    ],
+    "intro": [
+      "Interested in introducing Spicenza to your customers?",
+      "Explore our upcoming India range and discuss a future partnership."
+    ]
+  },
+  "moments": [
+    {
+      "key": "chai",
+      "label": "Chai time",
+      "time": "A little afternoon ritual",
+      "title": "Your cup’s new company.",
+      "copy": "Imagine the pause: a warm cup of chai, a little chutney and a bowl of chia sticks. A serving idea for our upcoming range.",
+      "slug": "chia-crunch-sticks",
+      "color": "#f7d6bc"
+    },
+    {
+      "key": "desk",
+      "label": "Desk break",
+      "time": "Between one thing and the next",
+      "title": "Make a little space.",
+      "copy": "Pause the to-do list. Explore the roasted pulse mix as a desk-side snack concept.",
+      "slug": "protein-crunch-mix",
+      "color": "#dce4f5"
+    },
+    {
+      "key": "out",
+      "label": "On the go",
+      "time": "A small pause in a busy day",
+      "title": "A different kind of crunch.",
+      "copy": "Explore flax sticks for your snack-break ideas. Final pack formats and availability will be confirmed.",
+      "slug": "flax-crunch-sticks",
+      "color": "#e5dfb9"
+    },
+    {
+      "key": "share",
+      "label": "To share",
+      "time": "A table with room for more",
+      "title": "A little of everything.",
+      "copy": "Bring your curiosity and discover the assortment together. Final pack contents are to be confirmed.",
+      "slug": "smart-snacking-variety-pack",
+      "color": "#ead3e6"
+    }
+  ],
+  "partner": {
+    "heading": [
+      "Good things are",
+      "better shared."
+    ],
+    "intro": [
+      "Interested in our upcoming Spicenza snack range?",
+      "Let’s explore a future India retail or distribution partnership."
+    ],
+    "cta": "Partner with Organiya"
+  }
+}
