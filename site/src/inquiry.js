@@ -4,7 +4,7 @@ export function initInquiry(){
  const form=document.querySelector('[data-inquiry-form]');if(!form||started)return;started=true;
  const status=form.querySelector('[data-form-status]'),submit=form.querySelector('[type=submit]');
  const feedback=(message,error=false)=>{status.textContent=message;status.classList.toggle('is-error',error);};
- const mount=()=>{if(widget!==null||!window.turnstile)return;widget=window.turnstile.render(form.querySelector('[data-turnstile]'),{sitekey:site.inquiry.siteKey,action:'inquiry',size:'flexible',theme:'light','error-callback':()=>feedback('The security check could not load. Please retry or email us directly.',true),'expired-callback':()=>feedback('The security check expired. Please complete it again.',true)});};
+ const mount=()=>{if(widget!==null||!window.turnstile)return;widget=window.turnstile.render(form.querySelector('[data-turnstile]'),{sitekey:site.inquiry.siteKey,action:'inquiry',size:'compact',theme:'light','error-callback':()=>feedback('The security check could not load. Please retry or email us directly.',true),'expired-callback':()=>feedback('The security check expired. Please complete it again.',true)});};
  const script=document.createElement('script');script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';script.async=true;script.onload=mount;script.onerror=()=>feedback('The security check could not load. Please retry or email us directly.',true);document.head.append(script);
  form.addEventListener('submit',async event=>{
   event.preventDefault();if(submit.disabled||!form.reportValidity())return;

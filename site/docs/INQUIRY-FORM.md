@@ -33,3 +33,5 @@ Restore the previous static Pages deployment to return to email-app inquiries. P
 Worker `organiya-inquiries` was deployed through the Cloudflare editor from the committed handler and catalog map. Production settings contain SITE_ORIGIN and encrypted INQUIRY_TO / TURNSTILE_SECRET, plus EMAIL. The exact route `organiyaglobal.com/api/inquiry` fails closed. Compatibility date: 2026-11-12. GET returned 405 and an invalid Turnstile token returned 400 without attempting email. Existing DNS and forwarding rules were unchanged.
 
 For subsequent code changes, deploy `worker/index.mjs` with Wrangler or bundle the handler and product map for the dashboard editor; preserve the existing bindings and secrets. The Pages Git integration deploys the static website only, not this separate Worker.
+
+The owner-approved live inquiry was accepted on 2026-11-12. Inbox receipt remains unconfirmed: the owner will check later. No additional test emails were sent. The real widget revealed a 320px overflow that the original empty mock missed; use the documented compact widget size and model its physical dimensions in responsive tests.
