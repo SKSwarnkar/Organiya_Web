@@ -45,13 +45,13 @@
         "status": "illustrative"
       },
       {
-        "id": "chia-crunch-sticks-gallery-4",
         "kind": "lifestyle",
-        "label": "Weekend gathering",
-        "src": "usa-family-v2.webp",
-        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
-        "caption": "AI-generated American family occasion · Serving inspiration",
-        "status": "illustrative"
+        "label": "Family game afternoon",
+        "src": "usa-chia-family-pouch-v1.webp",
+        "alt": "AI-generated American family playing a board game with a Spicenza Chia Crunch Sticks pouch, a bowl of chia sticks, veggie sliders and lemonade.",
+        "caption": "AI-generated American family scene · Illustrative Spicenza Chia pouch",
+        "status": "illustrative",
+        "id": "chia-crunch-sticks-usa-pouch-0"
       }
     ],
     "pendingMedia": [
@@ -309,13 +309,13 @@
         "status": "illustrative"
       },
       {
-        "id": "veggie-crisps-gallery-4",
         "kind": "lifestyle",
-        "label": "Weekend gathering",
-        "src": "usa-family-v2.webp",
-        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
-        "caption": "AI-generated American family occasion · Serving inspiration",
-        "status": "illustrative"
+        "label": "Backyard family cookout",
+        "src": "usa-veggie-family-pouch-v1.webp",
+        "alt": "AI-generated American family at a backyard cookout with a Spicenza Veggie Crisps pouch, colourful ridged crisps, grilled corn, veggie sliders and lemonade.",
+        "caption": "AI-generated American family scene · Illustrative Spicenza Veggie pouch",
+        "status": "illustrative",
+        "id": "veggie-crisps-usa-pouch-1"
       }
     ],
     "pendingMedia": [
@@ -476,13 +476,22 @@
         "status": "illustrative"
       },
       {
-        "id": "smart-snacking-variety-pack-gallery-4",
         "kind": "lifestyle",
-        "label": "Weekend gathering",
-        "src": "usa-family-v2.webp",
-        "alt": "AI-generated American family at a backyard picnic with snacks, corn, veggie sliders and apple pie.",
-        "caption": "AI-generated American family occasion · Serving inspiration",
-        "status": "illustrative"
+        "label": "Family game afternoon",
+        "src": "usa-chia-family-pouch-v1.webp",
+        "alt": "AI-generated American family playing a board game with a Spicenza Chia Crunch Sticks pouch, a bowl of chia sticks, veggie sliders and lemonade.",
+        "caption": "AI-generated American family scene · Illustrative Spicenza Chia pouch",
+        "status": "illustrative",
+        "id": "smart-snacking-variety-pack-usa-pouch-0"
+      },
+      {
+        "kind": "lifestyle",
+        "label": "Backyard family cookout",
+        "src": "usa-veggie-family-pouch-v1.webp",
+        "alt": "AI-generated American family at a backyard cookout with a Spicenza Veggie Crisps pouch, colourful ridged crisps, grilled corn, veggie sliders and lemonade.",
+        "caption": "AI-generated American family scene · Illustrative Spicenza Veggie pouch",
+        "status": "illustrative",
+        "id": "smart-snacking-variety-pack-usa-pouch-1"
       }
     ],
     "pendingMedia": [
