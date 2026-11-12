@@ -1,6 +1,6 @@
 # Organiya: enquiries, business development and India-focused copy
 
-Date: 12 November 2026. Status: proposed implementation plan, except the small public-email cleanup described below. Owner: Organiya founder; implementation: Codex. This extends INQUIRY-FORM.md and is the single plan for this tranche. No change to the snack-only launch, Option O design, upcoming-product status or Organiya/Spicenza relationship.
+Date: 12 November 2026. Status: proposed implementation plan, except the public-email cleanup and typography improvements described below. Owner: Organiya founder; implementation: Codex. This extends INQUIRY-FORM.md and is the single plan for this tranche. No change to the snack-only launch, Option O design, upcoming-product status or Organiya/Spicenza relationship.
 
 ## Decisions and scope
 
@@ -10,7 +10,9 @@ Optimise for useful conversations, not maximum personal-data collection or raw f
 
 Immediate release: remove public mailto links, repeated visible email addresses, the copy-email button and the address from browser content. Replace relevant navigation with contact-form links and update privacy/no-JavaScript instructions. Existing inbox routing, Worker delivery and old-site backups are unchanged. Backend error responses can still provide the existing support email on a delivery failure; this release does not make an already-public address secret or remove it from repository history/search caches.
 
-Not activated by this release: the redesigned form, new tracking, IP storage, geolocation enrichment, CRM, new rate limits or the wider copy rewrite. These require the phased implementation below. No new test email is authorised by this plan.
+The follow-up typography release improves supporting text, controls and captions throughout the existing pages, including the retailer introduction. It retains the headline wording and approved visual identity; see the measured audit in section 5.1.
+
+Not activated by either release: the redesigned form, new tracking, IP storage, geolocation enrichment, CRM, new rate limits or the wider copy rewrite. These require the phased implementation below. No new test email is authorised by this plan.
 
 ## 1. One form, with purposeful choices
 
@@ -159,6 +161,31 @@ Contact/privacy/errors: neutral company language, clear labels, field-level exam
 
 Review pass must include navigation, footer, buttons, product notes, image captions/alt text, FAQs, validation/error/success messages, page titles, meta descriptions and social-sharing text. Store editable copy in content JSON; remove duplicate strings from layouts as these sections are touched. Test heading wraps at 320/390/768/1440px rather than preserving hard-coded line breaks from old slogans.
 
+### 5.1 Typography and readability audit
+
+The retailer introduction was 15px on desktop and 14px on mobile, beside a 72px / 49px heading. It was readable, but visually underweighted for the sentence explaining the business opportunity. The problem was the hierarchy, not simply that all large headings should shrink. Keep the expressive Option O headlines and bring supporting information up to an appropriate reading size.
+
+The audit covers Home, Catalogue, a full product page, Our story, Distributors, Contact and Privacy. Product templates share the same rules. Computed styles, text-node sizes and screenshots were reviewed, rather than judging only a scaled screenshot.
+
+| Role | Before (desktop / mobile where different) | Implemented target |
+| --- | --- | --- |
+| Retailer page headline | 72px / 49px | Unchanged |
+| Page introduction | 15px / 14px | 20px / 18px; line height 1.6 |
+| Main reading paragraphs | Commonly 13–15px | 16px; line height 1.75 |
+| Product-card description | 12px / 11px | 15px; line height 1.6 |
+| Primary controls and form fields | Commonly 11–13px controls; mobile inputs already 16px | 16px primary controls/fields; 14px compact filters |
+| Important notices, consent and helper text | Commonly 10–13px | 14px |
+| Secondary labels and illustrative-image captions | Some 8–10px | 12px |
+| Footer navigation and legal/supporting text | Commonly 9–12px | 14px links; 13px supporting/legal text |
+
+These are hierarchy targets, not a claim that WCAG sets a universal minimum font size. Keep headings, reading text, actions and captions distinct. Use shared rem-based tokens in styles/production.css; do not reintroduce smaller page-specific overrides. Limit lead/body line length to approximately 62–65 characters where useful. Preserve existing foreground/background colours and test contrast separately.
+
+The larger image captions retain the 4:5 product framing. Move the decorative card arrow away from the caption, and place the tiny contact-thumbnail caption below its image rather than overlaying it. Allow controls, metadata and supporting rows to wrap instead of shrinking text to fit. No product artwork changes are needed for this pass.
+
+Acceptance: responsive checks at 320, 390, 768 and 1440px; all page routes, images and navigation; keyboard controls, galleries, mocked enquiry validation/submission and automated accessibility checks. Add a root-font 200% stress check for the new rem-based text and inspect narrow-screen cards and the retailer introduction visually. That stress check complements, but does not substitute for, browser zoom or a full manual accessibility audit. Recheck actual browser zoom, wrapping and text spacing when the wider copy rewrite changes headline lengths or adds form fields. Do not send a real enquiry during typography tests.
+
+For the later copy pass, review typography with the words: the introductory sentence should explain the business purpose before decorative content competes with it. Test with India-based retailers/distributors on their own phones, including readers who enlarge text. Record confusing words and hard-to-read sections separately.
+
 ## 6. Priorities, effort and acceptance
 
 Estimates are focused engineering/editorial days, not fixed calendar promises; content decisions, authentication and founder review can affect elapsed time.
@@ -166,6 +193,7 @@ Estimates are focused engineering/editorial days, not fixed calendar promises; c
 | Order | Deliverable | Complexity / estimate | Acceptance |
 | --- | --- | --- | --- |
 | Now | Public email-link cleanup and this plan | Low; this release | No mailto or public email address in built HTML/client assets; forwarding unchanged; form works |
+| Now | Shared typography/readability improvements | Low; follow-up release | Stronger retailer introduction; readable body, controls and captions; responsive, enlarged-text and existing functional checks |
 | P1 | Basic WAF/Worker throttles plus strict global cap/deduplication | Medium; 1–2 days | Boundary/concurrency/expiry/failure tests; useful 429; no real mail during automated tests; deployed settings recorded |
 | P1 | One form with purpose, optional product scope and conditional fields | Medium; 1–2 days | General/all/unlisted/no-product cases; regulatory path; editable prefill; old API payload compatibility; keyboard/mobile tests |
 | P1 | Business-focused copy pass using the examples above | Low–medium; 1–2 days | Founder checks factual accuracy; 5–10 India-based target readers can identify offer/status/next step; no unsupported claims |
@@ -177,6 +205,7 @@ Publish in small checked PRs. The website remains plain static HTML/CSS/JS with 
 
 ## Sources checked on 12 November 2026
 
+- [W3C: Resize Text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html) and [Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html): text enlargement and narrow-layout requirements; no blanket minimum font-size claim.
 - [Cloudflare WAF rate limiting availability and caveats](https://developers.cloudflare.com/waf/rate-limiting-rules/): Free fields, periods and rule count; approximate enforcement.
 - [Workers Rate Limiting binding](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/): 10/60-second windows and per-location scope.
 - [Durable Objects pricing](https://developers.cloudflare.com/durable-objects/platform/pricing/): SQLite on Free, finite quotas and failure behaviour.

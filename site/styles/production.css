@@ -3,3 +3,121 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 
 .inquiry-form{margin:28px 0}.inquiry-form .field{display:block;margin:20px 0}.inquiry-form .field span{display:block;margin-bottom:8px}.inquiry-form input:not([type=checkbox]),.inquiry-form textarea,.inquiry-form select{width:100%;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);padding:14px;font:inherit;min-width:0}.inquiry-form textarea{resize:vertical}.inquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.inquiry-grid .field{min-width:0}.consent-field{display:flex;align-items:flex-start;gap:12px;font-size:13px;line-height:1.7;margin:22px 0}.consent-field input{width:18px;height:18px;flex-shrink:0;margin-top:3px}.form-required{font-size:12px}.form-trap{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}[data-form-status]{line-height:1.7;overflow-wrap:anywhere}[data-form-status]:not(:empty){padding:18px;border-radius:12px;background:var(--paper);border:1px solid var(--line)}[data-form-status].is-error{color:#8b2820;border-color:#8b2820}.inquiry-form button:disabled{opacity:.65;cursor:wait}.inquiry-form textarea:focus-visible{outline:3px solid var(--accent);outline-offset:4px}[data-turnstile]{min-height:65px;max-width:100%;margin-block:20px}.inquiry-form small{font-size:inherit}.no-js .inquiry-form [data-inquiry-fields]>.inquiry-grid,.no-js .inquiry-form .field,.no-js .inquiry-form .consent-field,.no-js .inquiry-form [data-turnstile],.no-js .inquiry-form .form-required{display:none}@media(max-width:600px){.inquiry-grid{grid-template-columns:1fr;gap:0}.inquiry-form input,.inquiry-form textarea,.inquiry-form select{font-size:16px!important}}
+
+/* Production typography: shared reading roles override the compact review styles. */
+body.design-o {
+  --type-body: 1rem;
+  --type-lead: 1.25rem;
+  --type-card: .9375rem;
+  --type-control: 1rem;
+  --type-small: .875rem;
+  --type-caption: .75rem;
+}
+body.design-o main :is(
+  .daily-hero-copy > p:not(.eyebrow), .page-intro > p:not(.eyebrow),
+  .section-description, .range-notice p, .moment-preview-copy > p:not(.eyebrow),
+  .daily-about p:not(.eyebrow), .partner-inner p:not(.eyebrow),
+  .detail-description, .product-accordion p, .accordion p,
+  .snack-moment-card p:not(.eyebrow), .story-copy p:not(.eyebrow),
+  .story-connection p:not(.eyebrow), .occasion-grid p,
+  .distributor-story > div > p:not(.eyebrow), .steps p,
+  .form-side > p:not(.eyebrow), .email-panel > p:not(.eyebrow),
+  .contact-address p:not(.eyebrow), .faq-section details p, .privacy-copy p,
+  .about-principles p, .catalog-note p,
+  [id="no-results"] p, .catalog-bottom p, .retired-intro > p:not(.eyebrow)
+) {
+  font-size: var(--type-body);
+  line-height: 1.75;
+}
+body.design-o main .page-intro.container > p:not(.eyebrow) {
+  font-size: var(--type-lead);
+  line-height: 1.6;
+  max-width: 62ch;
+}
+body.design-o main .daily-hero .daily-hero-copy > p:not(.eyebrow) {
+  font-size: 1.125rem;
+  max-width: 54ch;
+}
+body.design-o :is(.story-copy, .privacy-copy) p { max-width: 65ch; }
+body.design-o .card-copy p { font-size: var(--type-card); line-height: 1.6; }
+body.design-o main :is(.eyebrow, .contact-product .eyebrow, .daily-hero-copy .eyebrow) {
+  font-size: var(--type-caption);
+  line-height: 1.6;
+  letter-spacing: .065em;
+}
+body.design-o .main-nav > a { font-size: var(--type-card); }
+body.design-o :is(.button, .moment-tabs button, .audience-tabs button, .text-link,
+  .snack-moment-card .text-link, .moment-preview-copy .button, .faq-section summary,
+  .product-accordion summary, .accordion summary) {
+  font-size: var(--type-control);
+  line-height: 1.5;
+}
+body.design-o :is(.filter, .snack-search button, .gallery-enlarge, .image-dialog button) {
+  font-size: var(--type-small);
+  line-height: 1.5;
+}
+body.design-o :is(.field, .snack-search > label) { font-size: var(--type-body); }
+body.design-o :is(.inquiry-form input, .inquiry-form textarea, .inquiry-form select, .snack-search input) {
+  font-size: var(--type-control);
+  line-height: 1.5;
+}
+body.design-o main :is(.form-required, .email-panel > p.email-privacy,
+  .consent-field, .upcoming-note p, .seller-note, .image-disclosure,
+  .product-gallery .image-disclosure, .occasion-disclosure) {
+  font-size: var(--type-small);
+  line-height: 1.7;
+}
+body.design-o :is(.gallery-caption, .gallery-count, .gallery-thumbnails > [data-gallery] > span:last-child,
+  .product-meta, .upcoming-label, .image-dialog-bottom > span, .zoom-original) {
+  font-size: var(--type-caption);
+  line-height: 1.6;
+}
+body.design-o :is(figcaption, .product-card .product-photo figcaption) {
+  font-size: var(--type-caption);
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+body.design-o :is(.product-photo figcaption, .product-card .product-photo figcaption) {
+  max-width: calc(100% - 12px);
+  left: 6px;
+  bottom: 6px;
+  padding: 4px 6px;
+}
+/* Keep the larger illustration label clear of the decorative card arrow. */
+body.design-o .card-image .image-arrow { top: 8px; bottom: auto; }
+/* A tiny contact thumbnail cannot accommodate readable overlaid caption text. */
+body.design-o .contact-product .product-photo { aspect-ratio: auto; }
+body.design-o .contact-product .product-photo img { height: auto; aspect-ratio: 4 / 5; }
+body.design-o .contact-product .product-photo figcaption {
+  position: static;
+  max-width: none;
+  padding: 5px;
+  background: var(--paper);
+  overflow-wrap: anywhere;
+}
+body.design-o .footer-top h2 { font-size: var(--type-caption); line-height: 1.5; }
+body.design-o .footer-top > div:not(:first-child) > a { font-size: var(--type-small); line-height: 1.7; }
+body.design-o :is(.footer-small, .footer-bottom, .footer-top > div:not(:first-child) > span) {
+  font-size: .8125rem;
+  line-height: 1.7;
+}
+body.design-o :is(.daily-small-note > span:last-child, .daily-postit > span,
+  .moment-sticker, .filter > span, .results-bar, .detail-facts span,
+  .story-number, .about-principles article > span, .image-label, .catalog-note small) {
+  font-size: var(--type-caption);
+  line-height: 1.6;
+}
+body.design-o :is(.moment-footnote, .breadcrumbs, .quiet-link) {
+  font-size: var(--type-small);
+  line-height: 1.6;
+}
+body.design-o .detail-facts strong { font-size: var(--type-body); }
+body.design-o .product-meta > span { min-width: 0; overflow-wrap: anywhere; }
+body.design-o .moment-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+body.design-o .moment-tabs button { min-width: 0; overflow-wrap: anywhere; }
+body.design-o .daily-small-note { flex-wrap: wrap; }
+body.design-o .results-bar { flex-wrap: wrap; }
+@media (max-width: 700px) {
+  body.design-o { --type-lead: 1.125rem; }
+  body.design-o .moment-tabs { flex-wrap: wrap; }
+}
