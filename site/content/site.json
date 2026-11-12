@@ -47,7 +47,11 @@
   "licenseNumber": null,
   "commerceEnabled": false,
   "canonicalOrigin": "https://organiyaglobal.com",
-  "contactMode": "email",
+  "contactMode": "form",
   "launchDate": "2026-11-11",
-  "publicPhaseLabel": "India · Upcoming snacks"
+  "publicPhaseLabel": "India · Upcoming snacks",
+  "inquiry": {
+    "endpoint": "/api/inquiry",
+    "siteKey": "0x4AAAAAAF93WKntA35g5g1c"
+  }
 }

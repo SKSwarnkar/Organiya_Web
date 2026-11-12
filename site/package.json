@@ -10,7 +10,8 @@
     "validate": "node scripts/validate.mjs",
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs",
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:inquiry": "node --test worker/handler.test.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.60.0",
