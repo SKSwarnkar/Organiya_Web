@@ -18,16 +18,16 @@
     },
     {
       "page": "about",
-      "label": "Our story"
+      "label": "About Organiya"
     },
     {
       "page": "distributors",
-      "label": "For retailers"
+      "label": "Retail & distribution"
     }
   ],
   "footerTagline": [
-    "Thoughtful discoveries.",
-    "Everyday moments."
+    "Spicenza snacks.",
+    "Coming to India with Organiya."
   ],
   "categories": [
     "All snacks",
@@ -38,9 +38,9 @@
   ],
   "mode": "production",
   "launchPhase": "upcoming",
-  "rangeNotice": "A little preview of what’s in the making. Our Spicenza snack range is being prepared for India. Final products, pack details and availability will be shared at launch. Not available to order yet.",
-  "productStatusLabel": "In the making",
-  "productCta": "Ask about this upcoming snack",
+  "rangeNotice": "Our Spicenza snack range is being prepared for India. Final ingredients, pack sizes, pricing and availability will be shared at launch. Not available to order yet.",
+  "productStatusLabel": "Upcoming range",
+  "productCta": "Enquire about this product",
   "sellerNote": "Spicenza is the product brand. Organiya Global LLP is preparing its introduction in India.",
   "productInformation": "Final ingredients, allergens, nutrition, pack sizes and pricing will be published when the products are ready to launch. The range shown here is in development and is not available to order.",
   "licenseNumber": null,

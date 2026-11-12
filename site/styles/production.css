@@ -121,3 +121,21 @@ body.design-o .results-bar { flex-wrap: wrap; }
   body.design-o { --type-lead: 1.125rem; }
   body.design-o .moment-tabs { flex-wrap: wrap; }
 }
+
+/* Shared enquiry fields: readable at narrow widths and with enlarged text. */
+body.design-o .inquiry-form fieldset { border:1px solid var(--line); border-radius:12px; margin:20px 0; padding:18px; min-width:0; }
+body.design-o .inquiry-form legend { font-size:1rem; padding:0 6px; }
+body.design-o .product-choice { display:flex; gap:12px; align-items:flex-start; font-size:1rem; line-height:1.5; padding:9px 0; }
+body.design-o .product-choice input { flex:0 0 18px; width:18px; height:18px; margin-top:3px; }
+body.design-o .inquiry-form .field-hint, body.design-o .contact-aside .field-hint { display:block; font-size:.875rem; line-height:1.6; margin-top:8px; }
+body.design-o .contact-preference summary { font-size:1rem; }
+body.design-o .hero-business-link { display:flex; width:fit-content; margin-top:18px; }
+body.design-o .daily-finder { margin-top:60px; }
+body.design-o .page-intro h1 { overflow-wrap:normal; }
+body.design-o .distributor-intro h1 { font-size:clamp(38px,5vw,68px); }
+body.design-o .contact-form-wrap, body.design-o .form-panel, body.design-o .field { min-width:0; }
+body.design-o .contact-product .product-photo img { object-fit:contain; }
+/* Let the hero colour follow its content instead of a fixed pixel stop. */
+body.design-o main:has(.daily-hero) { background:var(--paper); }
+body.design-o .daily-hero { isolation:isolate; }
+body.design-o .daily-hero::before { content:""; position:absolute; inset:0; z-index:-1; background:var(--hero-bg); box-shadow:0 0 0 100vmax var(--hero-bg); clip-path:inset(0 -100vmax); }

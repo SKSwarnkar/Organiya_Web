@@ -1,6 +1,23 @@
 # Organiya: enquiries, business development and India-focused copy
 
-Date: 12 November 2026. Status: proposed implementation plan, except the public-email cleanup and typography improvements described below. Owner: Organiya founder; implementation: Codex. This extends INQUIRY-FORM.md and is the single plan for this tranche. No change to the snack-only launch, Option O design, upcoming-product status or Organiya/Spicenza relationship.
+Date: 12 November 2026. Status: Now–P2 implementation delivered in the enquiry-growth release, with owner verification outstanding. Owner: Organiya founder; implementation: Codex. This extends INQUIRY-FORM.md and is the single plan for this tranche. No change to the snack-only launch, Option O design, upcoming-product status or Organiya/Spicenza relationship.
+
+## Release status and cost decision
+
+The Now–P2 engineering work is implemented. See [ENQUIRY-GROWTH-RELEASE.md](ENQUIRY-GROWTH-RELEASE.md) for exact deployed settings, tests, rollback and owner checks. The sections below retain the original design rationale; this status section supersedes their future-tense wording.
+
+| Item | Release outcome |
+| --- | --- |
+| Public-email cleanup and typography | Retained and regression checked |
+| WAF, Worker throttles, global caps and deduplication | Implemented with the Free WAF slot, Rate Limiting binding and one SQLite-backed Durable Object |
+| Generic enquiry form | Seven purposes, all/multiple/unlisted/no-product scopes, conditional optional fields, legacy compatibility |
+| India business copy | Updated; founder factual review and target-reader feedback remain human checks |
+| Structured emails and private lead register | Implemented; local offline app with email-record import, private export, ownership and follow-up |
+| Minimal attribution and weekly dashboard | Submission-only allowlisted attribution and offline business metrics; no separate tracking requests |
+
+The owner's free-tier constraint determines the P2 implementation: no SaaS CRM, automatic synchronisation, paid email sending, extra event-analytics endpoint, GPS or IP-location enrichment. Campaign codes propagate through site links without browser storage. The local dashboard counts imported enquiries and outcomes, not visitor sessions or abandonment. The existing verified email destination is preserved; changing the sender route to info@ remains unverified and is not required for these features.
+
+The owner must confirm inbox receipt, choose the daily operator/master-register location, and review factual copy with target readers. No additional real test email was sent during this release. Existing successful mail-service acceptance still is not proof of inbox placement.
 
 ## Decisions and scope
 
@@ -12,7 +29,7 @@ Immediate release: remove public mailto links, repeated visible email addresses,
 
 The follow-up typography release improves supporting text, controls and captions throughout the existing pages, including the retailer introduction. It retains the headline wording and approved visual identity; see the measured audit in section 5.1.
 
-Not activated by either release: the redesigned form, new tracking, IP storage, geolocation enrichment, CRM, new rate limits or the wider copy rewrite. These require the phased implementation below. No new test email is authorised by this plan.
+The enquiry-growth release activates the redesigned form, rate limits, business copy and submission-only attribution. Geolocation enrichment, raw-IP lead storage, CRM integration and separate funnel-event tracking remain off. No new test email is authorised by this plan.
 
 ## 1. One form, with purposeful choices
 
@@ -104,7 +121,7 @@ Example actions: repeated unlisted-cookie requests → interview interested buye
 
 ## 4. Exact initial abuse limits
 
-These are **proposed, not deployed**. I can implement/configure them using the existing Cloudflare account, subject to account access and the available Free rule slot. No paid upgrade is authorised. Review legitimate rejections after the first 14 days and before exhibitions/campaigns.
+These thresholds are implemented in the enquiry-growth release; the operational warning appears in Worker logs and the next accepted notification email. The Free WAF slot was unused and is now assigned only to /api/inquiry. No paid upgrade is authorised. Review legitimate rejections after the first 14 days and before exhibitions/campaigns.
 
 | Control | Initial setting | Implementation / caveat |
 | --- | --- | --- |
